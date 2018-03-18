@@ -1,0 +1,19 @@
+{
+    "name": "pandaac/account-character-creation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Eklund",
+            "email": "eklundchristopher@gmail.com"
+        }
+    ],
+    "require": {
+        "pandaac/core": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "pandaac\\Account\\CharacterCreation\\": "src/"
+        }
+    }
+}

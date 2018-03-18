@@ -1,0 +1,36 @@
+{
+    "name": "pandaac/account",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Eklund",
+            "email": "eklundchristopher@gmail.com"
+        }
+    ],
+    "require": {
+        "pandaac/core": "self.version"
+    },
+    "replace": {
+        "pandaac/account-creation": "self.version",
+        "pandaac/account-deletion": "self.version",
+        "pandaac/account-recovery": "self.version",
+        "pandaac/account-character-creation": "self.version",
+        "pandaac/account-character-deletion": "self.version",
+        "pandaac/account-character-edit": "self.version",
+        "pandaac/account-email-change": "self.version",
+        "pandaac/account-password-change": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "pandaac\\Account\\Creation\\": "src/AccountCreation/src/",
+            "pandaac\\Account\\Deletion\\": "src/AccountDeletion/src/",
+            "pandaac\\Account\\Recovery\\": "src/AccountRecovery/src/",
+            "pandaac\\Account\\CharacterCreation\\": "src/CharacterCreation/src/",
+            "pandaac\\Account\\CharacterDeletion\\": "src/CharacterDeletion/src/",
+            "pandaac\\Account\\CharacterEdit\\": "src/CharacterEdit/src/",
+            "pandaac\\Account\\EmailChange\\": "src/EmailChange/src/",
+            "pandaac\\Account\\PasswordChange\\": "src/PasswordChange/src/"
+        }
+    }
+}
