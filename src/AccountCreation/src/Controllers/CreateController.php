@@ -1,8 +1,8 @@
 <?php
 
-namespace pandaac\Account\Creation\Controllers;
+namespace OpenAAC\Account\Creation\Controllers;
 
-use pandaac\Contracts\Account;
+use OpenAAC\Contracts\Account;
 
 class CreateController
 {

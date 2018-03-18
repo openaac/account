@@ -1,19 +1,33 @@
 {
-    "name": "pandaac/account-creation",
+    "name": "openaac/account-creation",
     "type": "library",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/openaac/account/issues"
+    },
     "authors": [
         {
             "name": "Christopher Eklund",
             "email": "eklundchristopher@gmail.com"
+        },
+        {
+            "name": "Panagiotis Pagoulatos",
+            "email": "phpanos@gmail.com"
         }
     ],
     "require": {
-        "pandaac/core": "self.version"
+        "openaac/core": "self.version"
     },
     "autoload": {
         "psr-4": {
-            "pandaac\\Account\\Creation\\": "src/"
+            "OpenAAC\\Account\\Creation\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenAAC\\Account\\Creation\\Providers\\PackageServiceProvider"
+            ]
         }
     }
 }

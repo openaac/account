@@ -1,6 +1,6 @@
 <?php
 
-namespace pandaac\Account\Creation\Providers;
+namespace OpenAAC\Account\Creation\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'pandaac\Account\Creation\Controllers';
+    protected $namespace = 'OpenAAC\Account\Creation\Controllers';
 
     /**
      * Define the routes for the application.

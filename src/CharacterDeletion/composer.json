@@ -1,19 +1,26 @@
 {
-    "name": "pandaac/account-character-deletion",
+    "name": "openaac/account-character-deletion",
     "type": "library",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/openaac/account/issues"
+    },
     "authors": [
         {
             "name": "Christopher Eklund",
             "email": "eklundchristopher@gmail.com"
+        },
+        {
+            "name": "Panagiotis Pagoulatos",
+            "email": "phpanos@gmail.com"
         }
     ],
     "require": {
-        "pandaac/core": "self.version"
+        "openaac/core": "self.version"
     },
     "autoload": {
         "psr-4": {
-            "pandaac\\Account\\CharacterDeletion\\": "src/"
+            "OpenAAC\\Account\\CharacterDeletion\\": "src/"
         }
     }
 }

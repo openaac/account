@@ -1,6 +1,6 @@
 <?php
 
-namespace pandaac\Account\Creation\Providers;
+namespace OpenAAC\Account\Creation\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

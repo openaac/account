@@ -1,36 +1,50 @@
 {
-    "name": "pandaac/account",
+    "name": "openaac/account",
     "type": "library",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/openaac/account/issues"
+    },
     "authors": [
         {
             "name": "Christopher Eklund",
             "email": "eklundchristopher@gmail.com"
+        },
+        {
+            "name": "Panagiotis Pagoulatos",
+            "email": "phpanos@gmail.com"
         }
     ],
     "require": {
-        "pandaac/core": "self.version"
+        "openaac/core": "self.version"
     },
     "replace": {
-        "pandaac/account-creation": "self.version",
-        "pandaac/account-deletion": "self.version",
-        "pandaac/account-recovery": "self.version",
-        "pandaac/account-character-creation": "self.version",
-        "pandaac/account-character-deletion": "self.version",
-        "pandaac/account-character-edit": "self.version",
-        "pandaac/account-email-change": "self.version",
-        "pandaac/account-password-change": "self.version"
+        "openaac/account-creation": "self.version",
+        "openaac/account-deletion": "self.version",
+        "openaac/account-recovery": "self.version",
+        "openaac/account-character-creation": "self.version",
+        "openaac/account-character-deletion": "self.version",
+        "openaac/account-character-edit": "self.version",
+        "openaac/account-email-change": "self.version",
+        "openaac/account-password-change": "self.version"
     },
     "autoload": {
         "psr-4": {
-            "pandaac\\Account\\Creation\\": "src/AccountCreation/src/",
-            "pandaac\\Account\\Deletion\\": "src/AccountDeletion/src/",
-            "pandaac\\Account\\Recovery\\": "src/AccountRecovery/src/",
-            "pandaac\\Account\\CharacterCreation\\": "src/CharacterCreation/src/",
-            "pandaac\\Account\\CharacterDeletion\\": "src/CharacterDeletion/src/",
-            "pandaac\\Account\\CharacterEdit\\": "src/CharacterEdit/src/",
-            "pandaac\\Account\\EmailChange\\": "src/EmailChange/src/",
-            "pandaac\\Account\\PasswordChange\\": "src/PasswordChange/src/"
+            "OpenAAC\\Account\\Creation\\": "src/AccountCreation/src/",
+            "OpenAAC\\Account\\Deletion\\": "src/AccountDeletion/src/",
+            "OpenAAC\\Account\\Recovery\\": "src/AccountRecovery/src/",
+            "OpenAAC\\Account\\CharacterCreation\\": "src/CharacterCreation/src/",
+            "OpenAAC\\Account\\CharacterDeletion\\": "src/CharacterDeletion/src/",
+            "OpenAAC\\Account\\CharacterEdit\\": "src/CharacterEdit/src/",
+            "OpenAAC\\Account\\EmailChange\\": "src/EmailChange/src/",
+            "OpenAAC\\Account\\PasswordChange\\": "src/PasswordChange/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenAAC\\Account\\Creation\\Providers\\PackageServiceProvider"
+            ]
         }
     }
 }

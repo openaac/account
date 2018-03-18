@@ -1,10 +1,10 @@
 <?php
 
-namespace pandaac\Account\Creation\Providers;
+namespace OpenAAC\Account\Creation\Providers;
 
 use Illuminate\Support\AggregateServiceProvider as ServiceProvider;
 
-class AccountCreationServiceProvider extends ServiceProvider
+class PackageServiceProvider extends ServiceProvider
 {
     /**
      * The provider class names.
